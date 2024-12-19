@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Random;
 
-public class GuessingGame {
+public class GuessingGame1 {
     /*
      * Requirements
      * Changing levels

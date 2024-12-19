@@ -1,7 +1,6 @@
 import java.util.*;
 import java.util.Random;
-
-public class GuessingGame {
+public class GuessingGame{
     /*
      * Requirements
      * Changing levels
@@ -54,18 +53,20 @@ public class GuessingGame {
         }
     }
 
-    public static void playGame() {
+    public static void playGame()  {
         if (option > 0 && option < 4) {
             do {
-                System.out.println("Please enter a number to guess : ");
+                System.out.printf("Please enter a number to guess : %d ",machineNum);
                 guessNum = input.nextInt();
-                System.out.println("\nWrong guess!!! \n");
+                if (guessNum != machineNum) {
+                    System.out.println("Wrong guess!!! \n");
+                }
                 i++;
             } while (guessNum != machineNum && i != 5);
             if (i == 5) {
                 System.out.println("\nToo many wrong guess.\nYou lose !!!\nThe number was " + machineNum);
             } else {
-                System.out.printf("\nCorrect guess %d.\n\nYou win with a score of %d", machineNum,(((5 - i) + 1) * level));
+                System.out.printf("\nCorrect guess %d.\n\nYou win with a score of %d", machineNum,((5 - i + 1) * level));
                 score = (((5 - i) + 1) * level);
                 if (score > highScore) {
                     highScore = score;
@@ -89,7 +90,7 @@ public class GuessingGame {
             String answer = input.next();
 
             if (answer.equals("yes")) {
-                System.out.println("\t\t ***** AWESOME ***** \n\n");
+                System.out.println("\t\t\t ***** AWESOME ***** \n\n");
                 welcome();
                 selectLevel();
                 playGame();

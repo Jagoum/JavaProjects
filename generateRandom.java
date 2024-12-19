@@ -7,8 +7,8 @@ public class generateRandom {
 int randNumber = rand.nextInt(5 + 1);
 //double randNumber2 = rand.nextDouble(10);
 
-int randomNum = num.nextInt(5) + 1;
-//System.out.println("Random number : " + randNumber);
+int randomNum = rand.nextInt(5) + 1;
+System.out.println("Random number : " + randNumber);
 //System.out.println("Random number : " + randNumber2);
 System.out.println("Random number : " + randomNum);
 
