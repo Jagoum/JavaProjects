@@ -56,7 +56,7 @@ public class GuessingGame{
     public static void playGame()  {
         if (option > 0 && option < 4) {
             do {
-                System.out.printf("Please enter a number to guess : %d ",machineNum);
+                System.out.printf("Please enter a number to guess :  ");
                 guessNum = input.nextInt();
                 if (guessNum != machineNum) {
                     System.out.println("Wrong guess!!! \n");

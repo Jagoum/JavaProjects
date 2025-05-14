@@ -26,25 +26,26 @@ if(FinbonacciSeries(n) == -1){
 else{
     System.out.print(FinbonacciSeries(n)+" ");
 }
-// if(n == 0){
-// System.out.print(n);
-// }
-// else if(n==1){
-//     System.out.print(f0 + " "+ f1 + " ");
+System.out.println("\n\n");
+if(n == 0){
+System.out.print(n);
+}
+else if(n==1){
+    System.out.print(f0 + " "+ f1 + " ");
 
-// }
-// else if(n<0){
-//     System.out.println("Sorry but you cannot enter a negative interger ");
-// }
-// else{
-// System.out.print(f0 + " "+ f1 + " ");
-// for(int i = 2;i<=n;i++)
-// {
-//     fn = f0 + f1;
-//     f0=f1;
-//     f1=fn;
-//     System.out.print(fn + " ");
-// }
-// }
+}
+else if(n<0){
+    System.out.println("Sorry but you cannot enter a negative interger ");
+}
+else{
+System.out.print(f0 + " "+ f1 + " ");
+for(int i = 2;i<=n;i++)
+{
+    fn = f0 + f1;
+    f0=f1;
+    f1=fn;
+    System.out.print(fn + " ");
+}
+}
     }
 }
