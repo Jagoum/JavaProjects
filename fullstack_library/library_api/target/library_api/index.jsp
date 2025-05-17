@@ -103,12 +103,13 @@
 </head>
 
 <body>
-    <h1> Library Management System</h1>
+    <h1>📚 Library Management System</h1>
 
     <div class="input-form">
         <input id="title" placeholder="Book Title (e.g., Clean Code)">
         <input id="author" placeholder="Author (e.g., Robert Martin)">
         <button onclick="addBook()">Add Book</button>
+        <input type="submit" value="Submit">
     </div>
 
     <div id="book-list"></div>

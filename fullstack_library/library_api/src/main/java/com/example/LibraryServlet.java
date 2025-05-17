@@ -24,7 +24,7 @@ public class LibraryServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
         String title = req.getParameter("title");
         String author = req.getParameter("author");
-        LibraryDB.addBook(new Book(2, title, author));
+        LibraryDB.addBook(new Book(title, author));
         res.setStatus(201); // Created
     }
 

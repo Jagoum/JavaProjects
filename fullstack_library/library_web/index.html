@@ -103,17 +103,20 @@
 </head>
 
 <body>
-    <h1> Library Management System</h1>
+    <h1>📚 Library Management System</h1>
 
     <div class="input-form">
-        <input id="title" placeholder="Book Title (e.g., Clean Code)">
-        <input id="author" placeholder="Author (e.g., Robert Martin)">
-        <button onclick="addBook()">Add Book</button>
+        <form action="http://localhost:8081/api/books" method="post">
+            <input id="title" placeholder="Book Title (e.g., Clean Code)">
+            <input id="author" placeholder="Author (e.g., Robert Martin)">
+            <button onclick="addBook()">Add Book</button>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <div id="book-list"></div>
 
-    <script type="text/javascript" src="js/app.js" defer></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
